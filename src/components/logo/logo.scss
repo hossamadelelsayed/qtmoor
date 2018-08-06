@@ -1,0 +1,21 @@
+logo {
+    .logo-section{
+        background: transparent;
+        height: auto;
+    }
+    .logo{
+        height: 150px;
+        margin: auto;
+        margin-bottom: 0px;
+    }
+    .logo-title{
+        color : black;
+        font-size: 16pt;
+        margin: auto;
+    }
+    .logo-title2{
+        color : map-get($colors, secondary);
+        font-size: 14pt;
+        margin: auto;
+    }
+}

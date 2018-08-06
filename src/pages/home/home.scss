@@ -1,0 +1,102 @@
+page-home {
+    .category-scroll{
+            white-space: nowrap;
+            height: 310px;
+            overflow-x:scroll;
+            padding: 0 !important;
+        }
+    .latest-scroll{
+        white-space: nowrap;
+        height: 245px;
+        overflow-x:scroll;
+        padding: 0 !important;
+    }
+    .category-title{
+        padding: 0 !important;
+        padding-right: 5px !important;
+        .item-inner {
+            padding-left: 0px !important;
+            border: none !important;
+        }
+        p{
+            font-size: 26pt;
+            color: map-get($colors , third );
+            margin: 0px;
+            padding-right: 5px;
+        }
+    }
+    .latest-title{
+        padding: 0 !important;
+        padding-right: 5px !important;
+        .item-inner {
+            padding-left: 0px !important;
+            border: none !important;
+        }
+        .new{
+            font-size: 26pt;
+            color: map-get($colors , third );
+        }
+        .more{
+            font-size: 15pt;
+            color: map-get($colors , primary );
+        }
+        
+    }
+    .category-card{
+        width: 200px;
+        display: inline-block;
+        height: 300px;
+        border-radius: 15px;
+        margin: 0;
+        margin-left: 8px;
+        background: whitesmoke;
+        img{
+            height: 300px;
+        }
+        p{
+            position: relative;
+            bottom: 25%;
+            color: white;
+            padding-right: 10px;
+            .cat-name{
+                font-size: 25pt;
+            }
+            .cat-no{
+                font-size: 12pt;
+            }
+        }
+    }
+    .latest-card{
+        width: 150px;
+        display: inline-block;
+        height: 235px;
+        border-radius: 2px;
+        margin: 0;
+        margin-left: 8px;
+        // background: whitesmoke;
+        img{
+            height: 150px;
+        }
+        .prod-name{
+            font-size: 15pt;
+            color: black;
+            padding-right: 5px;
+            padding-top: 5px;
+            overflow: auto;
+        }
+        .prod-price{
+            font-size: 11pt;
+            padding-right: 5px;
+            padding-top: 5px;
+            color: map-get($colors, primary );
+        }
+        .starrow{
+            padding-right: 4px;
+            padding-top: 4px;
+            ion-icon{
+                color: orange;
+                margin: 1px;
+            }
+        }
+    }
+}

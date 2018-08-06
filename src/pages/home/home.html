@@ -1,0 +1,64 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+ <navbar-default title="الرئيسية" [displayCart]="true"></navbar-default>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+    <ion-item class="category-title">
+      <p>
+          الأقسام
+      </p>  
+    </ion-item>
+    <div class="category-scroll">
+    <ion-card class="category-card" *ngFor="let category of categories">
+        <img src="assets/imgs/tst1.jpeg"/>
+        <p>
+          <span class="cat-name">
+              تمور سادة
+          </span>
+            <br>
+            <span class="cat-no">
+              15 منتج
+            </span>
+        </p>
+      </ion-card>
+</div>
+<ion-item class="latest-title">
+    <p class="new">
+      المضافة حديثا
+    </p>
+    <p class="more" item-right>
+        المزيد
+    </p>  
+  </ion-item>
+  <div class="latest-scroll">
+    <ion-card class="latest-card" *ngFor="let category of categories">
+      <img src="assets/imgs/tst2.jpeg"/>
+      <ion-row>
+        <span class="prod-name">
+            تمر بالكاجو
+        </span>
+      </ion-row>
+      <ion-row class="starrow">
+          <ion-icon *ngFor="let icon of commonProvider.icons(3); let i = index" [name]="icon">
+          </ion-icon>
+      </ion-row>
+      <ion-row>
+          <span class="prod-price">
+              15 ريال
+          </span>
+      </ion-row>
+    </ion-card>
+  </div>
+
+
+</ion-content>

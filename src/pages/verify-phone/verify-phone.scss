@@ -1,0 +1,37 @@
+page-verify-phone {
+    ion-header {
+        display: none;
+    }
+    .title{
+        font-size: 14pt;
+        padding-right: 15px;
+    }
+    ion-col{
+        .text-input{
+           border : 1pt solid #CED0D2 ;
+           border-radius: 5px;
+           height: 47pt;
+           font-size: 30pt;
+           text-align: center;
+        }
+    }
+    .transmit-section{
+        padding-right: 15px;
+        .retransmit{
+            font-size: 16pt;
+            color : map-get($colors, primary);
+        }
+        .time{
+            font-size: 16pt;
+            color :#B2B2B2;
+        }
+    }
+    .login-btn{
+        background: linear-gradient(265deg,  map-get($colors, primary) , #8BC743);
+        color: #FBFBFB;
+        font-size: 16pt;
+        height: 48px;
+        position: relative;
+        bottom: 0px;   
+    }
+}

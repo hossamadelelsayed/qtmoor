@@ -1,0 +1,15 @@
+<!-- Generated template for the NavbarDefaultComponent component -->
+<ion-navbar>
+    <ion-buttons start>
+        <button ion-button icon-only  (click)="toggleMenu()" class="menu-btn">
+            <ion-icon name="menu" class="nav-icon"></ion-icon>
+          </button>
+      </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons end> 
+        <button *ngIf="displayCart" ion-button>
+            <span class="cartNo">3</span>
+            <ion-icon name="ios-cart-outline" class="nav-icon"></ion-icon>
+        </button>        
+    </ion-buttons>
+</ion-navbar>
