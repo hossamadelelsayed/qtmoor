@@ -1,0 +1,63 @@
+page-order-details {
+    .order-meta{
+        box-shadow: 0pt 3pt 4pt #606470;
+        border-radius: 15px;
+        border : 1px solid map-get( $colors , border );
+        padding: 10px;
+        margin-bottom: 20px;
+       .order-no{
+            font-size: 20pt;
+        }
+        .state{
+            font-size: 15pt;
+            color: map-get($colors, primary2 );
+        }
+        P{
+            margin: 0px;
+        }   
+    }
+   .order-products{
+       box-shadow: 0pt 3pt 4pt #606470;
+       border-radius: 15px;
+       margin-bottom: 20px;
+       border : 1px solid map-get( $colors , border );
+        [col-3] {
+            text-align: center;       
+        }
+        .heading{
+            font-size: 18pt;
+        }
+        .data{
+            font-size: 10pt;
+            color: map-get($colors , secondary2 );   
+            padding: 5px;
+        }
+    }
+    .price-list{
+        box-shadow: 0pt 3pt 4pt #606470;
+        border-radius: 15px;
+        p.title{
+            font-size: 18pt;
+            color: black;
+        }
+        p.value{
+            font-size: 13pt;
+            color: map-get($colors, secondary2 );
+        }
+        p.total-title{
+            font-size: 18pt;
+            color: map-get($colors , primary );
+        }
+        p.total-value{
+            font-size: 13pt;
+            color: map-get($colors, primary );
+        }
+        .tax{
+            font-size: 10pt;
+            color: map-get($colors, secondary2 );
+        }
+        .label{
+            margin: 0px !important;
+        }
+    }
+}

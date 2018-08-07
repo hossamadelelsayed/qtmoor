@@ -1,0 +1,56 @@
+<!--
+  Generated template for the OrderDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <navbar-default title="تفاصيل الطلب" [displayMenu]="false" [displayCart]="false"></navbar-default>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="order-meta">
+      <p class="order-no">رقم الطلب 1052208</p>
+      <p class="state">قيد التنفيذ</p>        
+    </div>  
+    <div class="order-products">
+      <ion-row class="heading">
+        <ion-col col-3>اسم المنتج</ion-col>
+        <ion-col col-3>الكمية</ion-col>
+        <ion-col col-3>السعر</ion-col>
+        <ion-col col-3>الأجمالى</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let product of products" class="data">
+        <ion-col col-3>تمر بالكاجو</ion-col>
+        <ion-col col-3>1</ion-col>
+        <ion-col col-3>60 ريال</ion-col>
+        <ion-col col-3>60 ريال</ion-col>
+      </ion-row>
+    </div>
+    <ion-list no-lines class="price-list">
+        <ion-item>
+          <p class="title">المجموع الكلى</p>
+          <p class="value" item-end>30</p>
+        </ion-item>
+        <ion-item>
+          <p class="title"> الضريبة
+              <span class="tax">(20%)</span>
+          </p>
+          <p class="value" item-end>30</p>
+        </ion-item>
+        <ion-item>
+          <p class="title">التوصيل</p>
+          <p class="value" item-end>30</p>
+        </ion-item>
+        <hr>
+        <ion-item>
+            <p class="total-title">الاجمالى</p>
+            <p class="total-value" item-end>30</p>
+        </ion-item>
+    </ion-list>
+</ion-content>

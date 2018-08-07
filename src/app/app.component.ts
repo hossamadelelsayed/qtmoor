@@ -7,9 +7,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = "HomePage";
+  rootPage:any = "AddressPage";
   @ViewChild(Nav) nav: Nav;
+  profilePages: Array<{ title: string, component: any, icon: string , active: number }>;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+    this.initList();
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -17,6 +19,28 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+  }
+  initList(){
+    this.profilePages = [
+      { title: 'الرئيسية', component: "HomePage", icon: 'ios-home-outline',active: 1},
+      { title: 'طلباتى', component: "MyordersPage", icon: 'ios-paper-outline',active: 0},
+      { title: 'المفضلة', component: "FavoritePage" , icon: 'ios-heart-outline',active: 0},
+      { title: 'العناوين', component: "AddressPage" , icon: 'ios-map-outline',active: 0},
+      { title: 'الملف الشخصى', component: null , icon: 'ios-person-outline',active: 0},
+      { title: 'صفحات فرعية', component: null , icon: 'ios-copy-outline',active: 0},
+      { title: 'اتصل بنا', component: null , icon: 'ios-chatbubbles-outline',active: 0} 
+    ];
+  }
+  setActiveItem(index : number){
+    for(let i=0;i<this.profilePages.length;i++){
+      if(i == index)
+      this.profilePages[i].active = 1;
+      else this.profilePages[i].active = 0;
+    }
+  }
+  openPage(index : number){
+    this.setActiveItem(index);
+    this.nav.setRoot(this.profilePages[index].component);
   }
 }
 

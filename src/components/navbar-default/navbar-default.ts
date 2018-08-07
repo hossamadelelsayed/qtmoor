@@ -15,6 +15,7 @@ export class NavbarDefaultComponent {
 
   @Input() title : string  ;
   @Input() displayCart : boolean = false ;
+  @Input() displayMenu : boolean = true ;
 
 
   constructor(public menuCtrl : MenuController ) {

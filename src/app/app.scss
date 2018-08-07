@@ -14,9 +14,51 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
 .center{
     text-align: center !important;
 }
 .text-input {
     direction: rtl !important;
+}
+#rightmenu {
+    .toolbar-content-md {
+        text-align: center;
+    }
+    .toolbar-title {
+        color: black; 
+        font-size: 27pt !important; 
+    }
+    .menu-inner {
+        width: 75%;
+    }
+    ion-list{
+        margin-top: 10px;
+    }
+    .item-block {
+        width: auto !important;
+    }
+    .item{
+        font-size: 24pt;
+        margin: 3px 10px !important;
+        border-radius: 15px;
+        ion-icon{
+            font-size: 24pt;
+            margin-left: 30px;
+        }
+    }
+    .active-item{
+        background: map-get($colors, third );
+        color: white;
+        ion-icon{
+            color:white;
+        }
+    }
+    .non-active-item{
+        background: white;
+        color: map-get($colors , secondary );
+        ion-icon{
+            color:map-get($colors , secondary );
+        }
+    }
 }
