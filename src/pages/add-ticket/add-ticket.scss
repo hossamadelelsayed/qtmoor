@@ -1,27 +1,16 @@
-page-signup {
-    ion-header {
-        display: none;
+page-add-ticket {
+    .title{
+        font-size: 14pt;
+        color: black;
+        padding: 0px 20px;
     }
-    .login-btn{
-        background: linear-gradient(265deg,  map-get($colors, primary) , #8BC743);
-        color: #FBFBFB;
-        font-size: 16pt;
-        height: 48px;
-        position: relative;
-        bottom: 0px;   
+    .content{
+        font-size: 14pt;
+        color: map-get($colors, secondary2 );
+        padding: 0px 20px;
     }
-    .forget-pass{
-        float: left;
-        color :  map-get($colors, secondary);
-        font-size: 16pt;
-    }
-    
-    .createAccount{
-        color : map-get($colors, secondary);
-        font-size: 16pt;
-    }
-    .newAccount{
-        color : map-get($colors, primary);
+    hr{
+        margin: 0px 20px;
     }
     .list-inputs{
         margin: 15px;
@@ -42,15 +31,21 @@ page-signup {
         }
         .form{
             .item{
-                // background: map-get($colors,  ) !important;
                 margin-bottom: 5px;
                 border-radius: 5px;
                 border: solid 1px #CED0D2;
             }
             .item-select .label {
-                // color: black;
                 font-size: 1.4rem;
             }
         }
+    }
+    .login-btn{
+        background: linear-gradient(265deg,  map-get($colors, primary) , #8BC743);
+        color: #FBFBFB;
+        font-size: 16pt;
+        height: 48px;
+        position: relative;
+        bottom: 0px;   
     }
 }

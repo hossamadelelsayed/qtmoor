@@ -1,0 +1,35 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+      <navbar-default title="الملف الشخصى" [displayCart]="false"></navbar-default>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list class="list-inputs">
+        <form class="form" #f="ngForm"> 
+        <ion-item >
+          <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
+          <ion-input type="text" placeholder="الاسم"></ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-label> <ion-icon name="ios-call-outline"></ion-icon></ion-label>
+          <ion-input   type="tel" placeholder="رقم الجوال"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label><ion-icon name="ios-home-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp; المدينة</ion-label> 
+            <ion-select>
+              <ion-option value="1">تبوك</ion-option>
+              <ion-option value="2">القصيم</ion-option>
+              <ion-option value="3">عرعر</ion-option>
+            </ion-select>
+        </ion-item>
+        <p class="change-pass" (click)="goToEditPass()">تغيير كلمة المرور</p>
+        <button ion-button block class="login-btn">حفظ التعديلات</button>
+        </form>
+      </ion-list>
+</ion-content>

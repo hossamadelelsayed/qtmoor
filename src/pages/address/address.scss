@@ -1,3 +1,31 @@
 page-address {
-
+    .card{
+        position: relative;
+    }
+    .card-header{
+        font-size: 15pt;
+        padding: 0px;
+        padding-right: 16px;
+    }
+    .card-content{
+        padding: 0px;
+        padding-right: 16px;
+    }
+    .item-block{
+        min-height: auto !important; 
+    }
+    .street{
+        font-size: 10pt;
+        color: map-get($colors ,secondary2);
+    }
+    .state{
+        margin : 10px 0px 10px 10px;
+    }
+    .more-icon{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 20px;
+        color: map-get($colors ,secondary2);
+    }
 }

@@ -10,5 +10,20 @@
 
 
 <ion-content padding>
-  
+  <ion-card  *ngFor="let address of addresses">
+    <ion-icon name="more" class="more-icon" (click)="presentPopover($event)"></ion-icon>
+    <ion-card-header>
+      المنزل
+    </ion-card-header>
+    <ion-card-content>
+          <p class="street">
+            23 شارع أبى بكر الصديق - حى النرجس
+        </p>
+        <ion-icon name="ios-map-outline" class="state" color="secondary2"></ion-icon>
+        <span class="street">مكة المكرمة</span>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab right bottom>
+    <button ion-fab color="third" (click)="goToAddAddress()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>

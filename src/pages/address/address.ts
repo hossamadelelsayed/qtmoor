@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams ,PopoverController } from 'ionic-angular';
 
 /**
  * Generated class for the AddressPage page.
@@ -14,12 +14,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'address.html',
 })
 export class AddressPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public addresses : any[] = [1,2];
+  constructor(public navCtrl: NavController, public navParams: NavParams ,
+             public popoverCtrl : PopoverController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddressPage');
+  }
+  presentPopover(myEvent) {
+    const popover = this.popoverCtrl.create("AddressActionPage",{},{cssClass: 'address-popover'});
+    popover.present({
+      ev:myEvent
+    });
+  }
+  goToAddAddress(){
+    this.navCtrl.push("AddressAddPage");
   }
 
 }

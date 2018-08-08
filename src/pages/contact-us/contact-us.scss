@@ -1,0 +1,31 @@
+page-contact-us {
+    .title{
+        font-size: 14pt;
+        color: black;
+        padding: 0px 8px;
+    }
+    .content{
+        font-size: 14pt;
+        color: map-get($colors, secondary2 );
+        padding: 0px 8px;
+    }
+    .ticket{
+        border: 1px solid map-get($colors, border );
+        border-radius: 15px;
+        box-shadow: 0pt 3pt 4pt #606470;
+        ion-col{
+            text-align: center;
+        }
+        .my-tickets{
+            border-left: 1px solid map-get($colors, border );    
+        }
+        .open-ticket{
+            border-right: 1px solid map-get($colors, border );    
+        }
+        P{
+            font-size: 14pt;
+            color: black;
+        }
+    }
+    
+}

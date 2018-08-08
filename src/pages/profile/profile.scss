@@ -1,7 +1,4 @@
-page-signup {
-    ion-header {
-        display: none;
-    }
+page-profile {
     .login-btn{
         background: linear-gradient(265deg,  map-get($colors, primary) , #8BC743);
         color: #FBFBFB;
@@ -9,19 +6,6 @@ page-signup {
         height: 48px;
         position: relative;
         bottom: 0px;   
-    }
-    .forget-pass{
-        float: left;
-        color :  map-get($colors, secondary);
-        font-size: 16pt;
-    }
-    
-    .createAccount{
-        color : map-get($colors, secondary);
-        font-size: 16pt;
-    }
-    .newAccount{
-        color : map-get($colors, primary);
     }
     .list-inputs{
         margin: 15px;
@@ -53,4 +37,10 @@ page-signup {
             }
         }
     }
-}
+    .change-pass{
+        float: left;
+        color :  map-get($colors, primary);
+        font-size: 15pt;
+    }
+
+}   

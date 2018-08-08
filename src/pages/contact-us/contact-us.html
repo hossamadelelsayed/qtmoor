@@ -1,0 +1,30 @@
+<!--
+  Generated template for the ContactUsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <navbar-default title="اتصل بنا" [displayCart]="false"></navbar-default>
+</ion-header>
+
+
+<ion-content padding>
+<p class="title">
+    مرحبا بك فى مركز مساعدة القسيم للتمور
+</p>
+<hr>
+<p class="content">
+    ان كنت تواجه اى مشاكل خاصة بحسابك او بعمليات الشراء يمكنك الان التواصل معنا و ارسال مشكلتك بالتفصيل و يقوم فريق المساعدة بالتواصل مع على الفور لحل جميع مشاكلك
+</p>
+<ion-row class="ticket">
+  <ion-col col-6 class="my-tickets" (click)="goToMyTickets()">
+      <img src="assets/imgs/ticket.png">
+      <p>تذاكرى</p>
+  </ion-col>
+  <ion-col col-6 class="open-ticket" (click)="goToAddTicket()">
+      <img src="assets/imgs/ticket.png">
+      <p >فتح تذكرة</p>
+  </ion-col>
+</ion-row>
+</ion-content>

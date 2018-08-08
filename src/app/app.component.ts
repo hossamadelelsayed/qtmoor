@@ -7,7 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = "AddressPage";
+  rootPage:any = "ProfilePage";
   @ViewChild(Nav) nav: Nav;
   profilePages: Array<{ title: string, component: any, icon: string , active: number }>;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -26,9 +26,9 @@ export class MyApp {
       { title: 'طلباتى', component: "MyordersPage", icon: 'ios-paper-outline',active: 0},
       { title: 'المفضلة', component: "FavoritePage" , icon: 'ios-heart-outline',active: 0},
       { title: 'العناوين', component: "AddressPage" , icon: 'ios-map-outline',active: 0},
-      { title: 'الملف الشخصى', component: null , icon: 'ios-person-outline',active: 0},
+      { title: 'الملف الشخصى', component: "ProfilePage" , icon: 'ios-person-outline',active: 0},
       { title: 'صفحات فرعية', component: null , icon: 'ios-copy-outline',active: 0},
-      { title: 'اتصل بنا', component: null , icon: 'ios-chatbubbles-outline',active: 0} 
+      { title: 'اتصل بنا', component: "ContactUsPage" , icon: 'ios-chatbubbles-outline',active: 0} 
     ];
   }
   setActiveItem(index : number){
