@@ -7,7 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = "ProfilePage";
+  rootPage:any = "CategoryPage";
   @ViewChild(Nav) nav: Nav;
   profilePages: Array<{ title: string, component: any, icon: string , active: number }>;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

@@ -1,3 +1,40 @@
 page-ticket-details {
-
+    .send-comment{
+       .label {
+            margin: 12px 0px 13px 8px;
+        }
+        .text-input{
+            border: 1px solid map-get($colors , border ); 
+            border-radius: 30px;
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        .item-block{
+            height: 43px !important;
+            min-height: 0 !important;
+        }
+    }
+    .card-content {
+        font-size: 10pt;
+        color : map-get($colors , secondary2);
+        padding-top: 25px;
+    }
+    .row{
+        position : relative;
+        img{
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            border-radius: 5px;
+            padding: 3px;
+         }
+        .customer-img{
+            background: map-get($colors , border);
+        }
+        .manager-img{
+            left :1px;
+            background : white;
+        }
+    }
+    
 }

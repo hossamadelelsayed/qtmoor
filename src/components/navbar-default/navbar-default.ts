@@ -1,5 +1,5 @@
 import { Component , Input} from '@angular/core';
-import { MenuController } from 'ionic-angular';
+import { MenuController, NavController } from 'ionic-angular';
 
 /**
  * Generated class for the NavbarDefaultComponent component.
@@ -18,10 +18,13 @@ export class NavbarDefaultComponent {
   @Input() displayMenu : boolean = true ;
 
 
-  constructor(public menuCtrl : MenuController ) {
+  constructor(public menuCtrl : MenuController , public navCtrl : NavController) {
     console.log('Hello NavbarDefaultComponent Component');
   }
   toggleMenu() {
     this.menuCtrl.toggle("rightmenu");
+  }
+  goToCart(){
+    this.navCtrl.push("CartPage");
   }
 }

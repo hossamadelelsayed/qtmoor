@@ -19,7 +19,7 @@
       </p>  
     </ion-item>
     <div class="category-scroll">
-    <ion-card class="category-card" *ngFor="let category of categories">
+    <ion-card class="category-card" *ngFor="let category of categories" (click)="goToCategoryPage()">
         <img src="assets/imgs/tst1.jpeg"/>
         <p>
           <span class="cat-name">

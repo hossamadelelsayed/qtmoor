@@ -7,7 +7,7 @@
       </ion-buttons>
     <ion-title>{{title}}</ion-title>
     <ion-buttons *ngIf="displayCart" end> 
-        <button  ion-button>
+        <button  ion-button (click)="goToCart()">
             <span class="cartNo">3</span>
             <ion-icon name="ios-cart-outline" class="nav-icon"></ion-icon>
         </button>        

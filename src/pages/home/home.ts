@@ -23,5 +23,8 @@ export class HomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
+  goToCategoryPage(){
+    this.navCtrl.push("CategoryPage");
+  }
 
 }

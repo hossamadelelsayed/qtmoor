@@ -1,0 +1,57 @@
+page-cart {
+    .card{
+        position : relative;
+    }
+    .prod-avatar{
+        display: inline;
+        float: right;
+        img{
+            width: 71pt !important;
+            height: 71pt !important;
+            border-radius: 10px !important;
+            display: inline;
+            margin-left: 10px;
+        }
+    }
+    .card-content{
+        padding: 0px;
+    }
+    .item-block{
+        min-height: auto !important; 
+    }
+    .item{
+        padding-right: 5px;
+        .label {
+            margin: 0 ;
+            margin-top: 5px;
+        }
+    }
+    .prod-data{
+        .name{
+            font-size: 15pt;
+            color: black;
+            padding: 3px;
+        }
+        .quan{
+            font-size: 10pt;
+            color: black;
+            padding: 3px;
+        }
+        .price{
+            position: relative;
+            top: 18px;
+        }
+        .del{
+            position: absolute;
+            left: 10px;
+            bottom: 5px;
+            color: red;
+            font-size: 10pt;
+        }
+        ion-icon{
+            font-size: 1.5rem;
+            margin: 2px;
+            color: map-get($colors, secondary2 );
+        }
+    }
+}

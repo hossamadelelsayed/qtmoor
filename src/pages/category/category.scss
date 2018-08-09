@@ -1,0 +1,53 @@
+page-category {
+    .latest-card{
+        position: relative;
+        width: auto;
+        display: inline-block;
+        height: 235px;
+        border-radius: 15px;
+        margin: 0;
+        margin-left: 8px;
+        .active-fav{
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            color: white;
+            background: crimson;
+            border-radius: 30px;
+            padding: 5px 4px 2px 4px;
+        }
+        .non-active-fav{
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            color: crimson;
+            background: white;
+            border-radius: 30px;
+            padding: 5px 4px 2px 4px;
+        }
+        img{
+            height: 150px;
+        }
+        .prod-name{
+            font-size: 15pt;
+            color: black;
+            padding-right: 5px;
+            padding-top: 5px;
+            overflow: auto;
+        }
+        .prod-price{
+            font-size: 11pt;
+            padding-right: 5px;
+            padding-top: 5px;
+            color: map-get($colors, primary );
+        }
+        .starrow{
+            padding-right: 4px;
+            padding-top: 4px;
+            ion-icon{
+                color: orange;
+                margin: 1px;
+            }
+        }
+    }
+}

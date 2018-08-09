@@ -5,14 +5,33 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>ticket-details</ion-title>
-  </ion-navbar>
-
+    <navbar-default title="تذكرة رقم 1200" [displayMenu]="false" [displayCart]="false"></navbar-default>  
 </ion-header>
-
-
 <ion-content padding>
-
-</ion-content>
+<ion-row>
+    <ion-avatar>
+      <img class="customer-img" src="assets/imgs/avatar.png">
+    </ion-avatar> 
+    <ion-card>
+      <ion-card-content>
+        السلام عليكم انا لدى مشكلة بخصوص الطلب الاخير لى لانه لم يصل الى حتى الان
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-avatar>
+      <img class="manager-img" src="assets/imgs/logo.png">
+    </ion-avatar> 
+    <ion-card>
+      <ion-card-content>
+      نحن نعتذر بشدة بخصوص طلبك الاخير و سنحاول ايجاد حل للمشكلة فى اقرب توقيت
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+  </ion-content>
+<ion-footer class="send-comment">  
+    <ion-item >
+      <ion-label><ion-icon name="send"  color="third"></ion-icon></ion-label>
+      <ion-textarea rows="1" [(ngModel)]="commentTxt" placeholder="أكتب رسالتك..."></ion-textarea>
+    </ion-item>
+</ion-footer>
