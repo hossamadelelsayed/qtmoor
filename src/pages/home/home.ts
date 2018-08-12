@@ -26,5 +26,8 @@ export class HomePage {
   goToCategoryPage(){
     this.navCtrl.push("CategoryPage");
   }
+  goToProductDetails(){
+    this.navCtrl.push("ProductDetailsPage");
+  }
 
 }

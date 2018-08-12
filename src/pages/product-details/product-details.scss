@@ -1,0 +1,99 @@
+page-product-details {
+    .login-btn{
+        background: linear-gradient(265deg,  map-get($colors, primary) , #8BC743);
+        color: #FBFBFB;
+        font-size: 16pt;
+        height: 48px;
+        position: relative;
+        bottom: 0px;   
+    }
+    .slider{
+        height: 300px;
+        .swiper-pagination {
+            bottom: 30px !important;
+        }
+        .swiper-pagination-bullet-active {
+            background: map-get($colors, primary2 );
+            opacity: 1;
+        }
+    }
+    .prod-info{
+        padding: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+        position: relative;
+        bottom: 25px;
+        border-radius: 30px;
+        background-color: white;
+        z-index: 1;
+        .comment{
+            .title{
+                font-size: 15pt;
+            }
+            .add-comment{
+                font-size: 10pt;
+                color: map-get($colors, primary );
+                text-decoration: underline;
+                padding: 2px 8px;
+            }
+        }
+        .prod-detail{
+            .prod-title{
+                font-size: 15pt;
+            }
+            .detail-table{
+                font-size: 12pt;
+                color: map-get($colors,  secondary2 );
+                border-bottom: 1px solid map-get($colors , secondary2 );
+                border-top: 1px solid map-get($colors , secondary2 );
+                margin-top: 5px;
+            }
+        }
+        .prod-desc{
+            .prod-title{
+                font-size: 15pt;
+            }
+            .content{
+                font-size: 14pt;
+                padding-top: 5px;
+                color: map-get($colors , secondary2 );
+            }
+            .item{
+                margin: 5px 0px;
+                border-radius: 5px;
+                border: solid 1px #CED0D2;
+            }
+            .item-select .label {
+                font-size: 1.4rem;
+            }
+        }
+        .prod-meta{
+            position: relative;
+            margin-top: 10px;
+            .prod-name{
+                font-size: 15pt;
+            }
+            .prod-price{
+                font-size: 10pt;
+                padding-top: 5px;
+                color: map-get($colors, primary );
+            }
+            .starrow{
+                padding-top: 4px;
+                ion-icon{
+                    color: orange;
+                    margin: 1px;
+                }
+            }
+            .icon-fav{
+                position: absolute;
+                left: 1px;
+                top: 5px;
+                color: white;
+                background: crimson;
+                border-radius: 30px;
+                padding: 5px 4px 2px 4px;
+            }
+        }
+    }
+}

@@ -41,7 +41,7 @@
     </p>  
   </ion-item>
   <div class="latest-scroll">
-    <ion-card class="latest-card" *ngFor="let category of categories">
+    <ion-card class="latest-card" *ngFor="let category of categories" (click)="goToProductDetails()">
       <img src="assets/imgs/tst2.jpeg"/>
       <ion-row>
         <span class="prod-name">

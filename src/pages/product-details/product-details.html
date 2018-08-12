@@ -1,0 +1,106 @@
+<!--
+  Generated template for the ProductDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <navbar-default title="تفاصيل المنتج" [displayCart]="true" [displayMenu]="false"></navbar-default>
+</ion-header>
+
+
+<ion-content>
+    <ion-slides class="slider" pager dir="rtl">
+        <ion-slide *ngFor="let img of imgs">
+          <img [src]="img">
+        </ion-slide>
+    </ion-slides>
+    <div class="prod-info">
+      <div class="prod-meta">
+          <ion-icon name="heart" class="icon-fav"></ion-icon>
+          <ion-row>
+            <span class="prod-name">
+                تمر خصاب عصفور
+            </span>
+          </ion-row>
+          <ion-row class="starrow">
+              <ion-icon *ngFor="let icon of commonProvider.icons(3); let i = index" [name]="icon">
+              </ion-icon>
+          </ion-row>
+          <ion-row>
+              <span class="prod-price">
+                  15 ريال
+              </span>
+          </ion-row>
+          <hr>
+        </div>
+        <div class="prod-desc">
+            <ion-row>
+              <span class="prod-title">
+                  وصف المنتج
+              </span>
+            </ion-row>
+            <ion-row>
+                <span class="content">
+                    من تمور الامارات لون البسر احمر داكن او احمر فاتح بالاعتماد على نوعية التربة الشكل بيضوي مقلوب والذنب مخروطي الشكل الثمرة في مرحلة البسر حلو مع طعم قابض والمادة الدباغية والالياف متوسطة والندبة واضحة لون الرطب بني محمر ولون التمر بني غامق معدل لون الرطب بني محمر لون التمر بني غامق
+                </span>
+            </ion-row>
+            <ion-item>
+                <ion-label><ion-icon name="funnel"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp; نوع الكمية</ion-label> 
+                <ion-select>
+                  <ion-option value="1">كيلو</ion-option>
+                  <ion-option value="2">علبة</ion-option>
+                  <ion-option value="3">كرتونة</ion-option>
+                </ion-select>
+            </ion-item>
+            <hr>
+        </div>
+        <div class="prod-detail">
+          <ion-row>
+              <span class="prod-title">
+                  تفاصيل المنتج
+              </span>
+          </ion-row>
+          <div class="detail-table">
+            <ion-row>
+              <ion-col col-6>
+                  بلد المنشأ
+              </ion-col>
+              <ion-col col-6>
+                :  السعودية
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-6>
+                  الصلاحية
+              </ion-col>
+              <ion-col col-6>
+                : 3 سنوات
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-6>
+                  الحجم الأجمالى
+              </ion-col>
+              <ion-col col-6>
+                : 24 حبة
+              </ion-col>
+            </ion-row>
+          </div>
+          <hr>
+      </div>
+      <div class="comment">
+        <ion-row >
+            <span class="title">
+                التعليقات
+            </span>
+            <span class="add-comment">
+                أضف تعليقك
+            </span>
+        </ion-row>
+      </div>
+    </div>  
+</ion-content>
+<ion-footer>
+    <button ion-button block class="login-btn">اضف الى السلة</button>
+</ion-footer>

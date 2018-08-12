@@ -1,4 +1,30 @@
 page-cart {
+    .login-btn{
+        background: linear-gradient(265deg,  map-get($colors, primary) , #8BC743);
+        color: #FBFBFB;
+        font-size: 16pt;
+        height: 48px;
+        position: relative;
+        bottom: 0px;   
+    }
+    .coupon{
+        margin: 5px 0px;
+        font-size: 10pt;
+        color: map-get($colors, secondary2 )
+    }
+    .total{
+        margin:5px 0px; 
+        color: map-get($colors , primary );
+        .title{
+            font-size: 18pt;
+        }
+        .price{
+            font-size: 12pt;
+        }
+    }
+    ion-footer{
+        padding: 0px 30px;
+    }
     .card{
         position : relative;
     }
@@ -38,8 +64,9 @@ page-cart {
             padding: 3px;
         }
         .price{
-            position: relative;
-            top: 18px;
+            position: absolute;
+            bottom: 2px;
+            right: 83pt;
         }
         .del{
             position: absolute;
